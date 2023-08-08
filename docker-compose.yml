@@ -1,0 +1,11 @@
+version: '3'
+services:
+  aspnetcore-in-docker:
+    image: aspnetcore-in-docker
+    container_name: aspnetcore-in-docker
+    ports:
+      - 5000:80
+    volumes:
+      - /c/Users/larry/Downloads/logs.txt:/app/logs.txt
+      # d槽的此資料夾需要開放權限
+      #- /d/b.Coding/AspNetCoreInDocker/logs.txt:/app/logs.txt
